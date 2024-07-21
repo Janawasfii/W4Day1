@@ -24,7 +24,7 @@ public class Main {
                     System.out.print("Enter Rental Days: ");
                     int carDays = scan.nextInt();
                     scan.nextLine();
-                    Cars car = new Cars(carModel, carDays);
+                    Vehicle car = new Cars(carModel, carDays);
                     rentedVehicles.add(car);
                     System.out.println("*********************************");
                     car.displayDetails();
@@ -36,7 +36,7 @@ public class Main {
                     System.out.print("Enter Rental Hours: ");
                     int bikeHours = scan.nextInt();
                     scan.nextLine();
-                    Bikes bike = new Bikes(bikeBrand, bikeHours);
+                    Vehicle bike = new Bikes(bikeBrand, bikeHours);
                     rentedVehicles.add(bike);
                     System.out.println("*********************************");
                     bike.displayDetails();
@@ -48,7 +48,7 @@ public class Main {
                     System.out.print("Enter Rental Weeks: ");
                     int truckWeeks = scan.nextInt();
                     scan.nextLine();
-                    Trucks truck = new Trucks(truckType, truckWeeks);
+                    Vehicle truck = new Trucks(truckType, truckWeeks);
                     rentedVehicles.add(truck);
                     System.out.println("*********************************");
                     truck.displayDetails();
